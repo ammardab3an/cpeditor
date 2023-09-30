@@ -438,10 +438,10 @@ void CodeEditor::wheelEvent(QWheelEvent *e)
             return;
         }
         int newSize = font().pointSize();
-        if (e->angleDelta().y() > 0)
-            newSize = qMin(newSize + 1, sizes.last());
-        else if (e->angleDelta().y() < 0)
-            newSize = qMax(newSize - 1, sizes.first());
+        // if (e->angleDelta().y() > 0)
+        //     newSize = qMin(newSize + 1, sizes.last());
+        // else if (e->angleDelta().y() < 0)
+        //     newSize = qMax(newSize - 1, sizes.first());
         if (newSize != font().pointSize())
         {
             QFont newFont = font();
